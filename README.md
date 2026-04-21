@@ -23,6 +23,11 @@ cp .env.example .env
 
 3. Put your Postgres connection string into `DATABASE_URL`.
 
+4. Configure allowed frontend origins in `CORS_ORIGINS`.
+	 - Use `*` for quick testing.
+	 - For production, use comma-separated origins, for example:
+		 `CORS_ORIGINS=https://supabase-db-sync-test-fe.vercel.app,http://localhost:5173`
+
 ## Run
 
 ```bash
