@@ -20,7 +20,6 @@ async function logDatabaseConnectionStatus() {
 
 void logDatabaseConnectionStatus();
 
-server.listen(port, () => {
-  // eslint-disable-next-line no-console
-  console.log(`API listening on http://localhost:${port}`);
+server.listen(port, '0.0.0.0', () => {
+  console.log(`API listening on port ${port}`);
 });
